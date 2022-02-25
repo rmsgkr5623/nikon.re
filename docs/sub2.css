@@ -1,0 +1,123 @@
+.con{
+  width:1920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/*탑바*/
+
+
+.menu-items {
+  font-size: 16px;
+}
+
+
+.menu-1__line {
+  left: -500px;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-1__line::after {
+  content: "";
+  width: 0.00001px;
+  transition: all 0.3s;
+  border-radius: 50%;
+  background-color: #ffe600;
+}
+
+.menu-1:hover > .menu-1__line::after {
+  width: 100%;
+  border-radius: 0;
+}
+
+.top-bar:hover, 
+.top-bar.follow {
+  background-color: #232323;
+}
+
+.menubox-1 {
+  --expand-height:390px;
+}
+
+
+.menubox-1 > ul > li {
+  position: relative;
+}
+
+.menubox-1 > ul > li > a {
+  display:flex;
+  height:100%;
+  align-items:center;
+  padding:0 35px;
+}
+
+.menubox-1 > ul ul {
+  background-color: #272727;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  height:var(--expand-height);
+  left: 0;
+  z-index: 10;
+  display: none;
+}
+
+.menubox-1 ul > li > a {
+  white-space: nowrap;
+}
+
+.menubox-1 > ul ul > li {
+  background-color: #272727;
+}
+
+.menubox-1 > ul ul > li > a {
+  display: block;
+  text-align: center;
+  color: #aaa;
+  font-weight: 600;
+  padding: 28px 0;
+  font-size:13px;
+}
+
+.menubox-1 > ul ul > li:hover > a {
+  color: white;
+  text-decoration:underline;
+}
+
+.menubox-1__sub-menu-bg {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: #272727;
+  z-index: 9;
+  display: none;
+  height:var(--expand-height);
+}
+
+
+/*이벤트페이지*/
+.btn-list{
+  padding:22px 62px;
+  border: solid 2px #777777;
+  border-radius:10px;
+  background-color:white;
+  color:#777;
+  font-size:18px;
+  font-weight:500;
+   margin-bottom:100px;
+}
+
+.btn-list:hover{
+  background-color:#FFD900;
+  color:#fff;
+  border: solid 2px #FFD900;
+  transition:.5s;
+}
+
+/*푸터*/
+
+footer > img{
+   margin-left:270px;
+}
